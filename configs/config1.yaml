@@ -1,10 +1,10 @@
-train_data_path: ./tsp100_train_concorde.pkl
+train_data_path: ./tsp100_train_mid
 val_data_path: ./tsp100_test_concorde.pkl
 node_size: 100
 train_batch_size: 80 # [tsp50, tsp100, tsp500, tsp1000]: 80
 val_batch_size: 1280 # [tsp50, tsp100]: 1280, [tsp500, tsp1000]: 128
 test_batch_size: 1280
-G: 100
+G: 1
 resume_checkpoint: None
 gpus: [0, 1, 2, 3]
 max_epochs: 200
