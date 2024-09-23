@@ -4,7 +4,7 @@ node_size: 1000
 train_batch_size: 80 # [tsp50, tsp100, tsp500, tsp1000]: 80
 val_batch_size: 128 # [tsp50, tsp100]: 1280, [tsp500, tsp1000]: 128
 test_batch_size: 128
-G: 1000
+G: 1
 resume_checkpoint: None
 gpus: [0, 1, 2, 3]
 max_epochs: 100
