@@ -4,13 +4,13 @@ node_size: 500
 train_batch_size: 80 # [tsp50, tsp100, tsp500, tsp1000]: 80
 val_batch_size: 128 # [tsp50, tsp100]: 1280, [tsp500, tsp1000]: 128
 test_batch_size: 128
-G: 500
+G: 1
 resume_checkpoint: None
 gpus: [4, 5, 6, 7]
 max_epochs: 200
-enc_num_layers: 6
-dec_num_layers: 6
-d_model: 256
+enc_num_layers: 12
+dec_num_layers: 12
+d_model: 128
 d_ff: 1024
 h: 8
 dropout: 0.1
