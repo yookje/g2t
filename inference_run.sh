@@ -1,0 +1,2 @@
+python3 inference_group.py --config "./configs/inference_config1.yaml" --ckpt "./logs/lightning_logs/version_599/checkpoints/TSP20-epoch=00-opt_gap=115.3660.ckpt"
+python3 inference_group.py --config "./configs/inference_group_config1.yaml" --ckpt "./logs/lightning_logs/version_599/checkpoints/TSP20-epoch=00-opt_gap=115.3660.ckpt"
