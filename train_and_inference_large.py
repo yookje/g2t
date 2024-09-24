@@ -509,7 +509,8 @@ def parse_arguments():
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 def start_discord(cfg, v_num):
-    url = "https://discord.com/api/webhooks/1271091864472129536/3zhVhquWprpVXd3KcJ09sSko4azfnkqf8OuVZgZHXJy9I4pQNXRXZakcpoaT3vqTcw5_"
+    url = "https://discord.com/api/webhooks/1271091923695964242/QTJfLsteoSHdXIN2XjtfqI93bIrzVITVb65n8ZyMw4VIB1k0dCbEmdSvC3p1NBHT7y-T"
+    #url = "https://discord.com/api/webhooks/1271091864472129536/3zhVhquWprpVXd3KcJ09sSko4azfnkqf8OuVZgZHXJy9I4pQNXRXZakcpoaT3vqTcw5_"
     webhook = DiscordWebhook(url=url)
 
     embed = DiscordEmbed(title="Train start", description=f"version_{v_num}", color="03b2f8")
@@ -526,7 +527,8 @@ def start_discord(cfg, v_num):
     response = webhook.execute()
 
 def end_discord(v_num, metrics=None, G = None, G_hitratio = None, G_optgap = None, elapsed_time=None, elapsed_time2 = None):
-    url = "https://discord.com/api/webhooks/1271091864472129536/3zhVhquWprpVXd3KcJ09sSko4azfnkqf8OuVZgZHXJy9I4pQNXRXZakcpoaT3vqTcw5_"
+    url = "https://discord.com/api/webhooks/1271091923695964242/QTJfLsteoSHdXIN2XjtfqI93bIrzVITVb65n8ZyMw4VIB1k0dCbEmdSvC3p1NBHT7y-T"
+    #url = "https://discord.com/api/webhooks/1271091864472129536/3zhVhquWprpVXd3KcJ09sSko4azfnkqf8OuVZgZHXJy9I4pQNXRXZakcpoaT3vqTcw5_"
     webhook = DiscordWebhook(url=url)
 
     embed = DiscordEmbed(title="Train End", description=f"version_{v_num}", color="03b2f8")
