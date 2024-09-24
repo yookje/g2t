@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
-#from model import subsequent_mask
+from model import subsequent_mask
 
 from tqdm import tqdm
 from pprint import pprint
