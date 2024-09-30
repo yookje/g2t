@@ -7,7 +7,7 @@ test_batch_size: 1280
 G: 1
 resume_checkpoint: None
 gpus: [0,1,2,3]
-max_epochs: 200
+max_epochs: 50
 enc_num_layers: 12
 dec_num_layers: 12
 d_model: 128
