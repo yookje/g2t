@@ -266,7 +266,8 @@ class TSPDataset(Dataset):
             self.ntokens.append(torch.LongTensor([ntoken]))
             self.src.append(tsp_instance)
 
-            #modified
+            #modified for depth4
+            fuzzy_instance = torch.concat([fuzzy_instance[:,:32],fuzzy_instance[:,48:]], dim = -1)
             enclut_instance = self.data_augment4(tsp_instance, fuzzy_instance, True)
             self.src_fuzzy.append(enclut_instance)
 
