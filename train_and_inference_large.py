@@ -20,7 +20,7 @@ from dataset_pickle_large import TSPDataset, collate_fn, make_tgt_mask
 from dataset_inference_pickle_large import TSPDataset as TSPDataset_Val
 from dataset_inference_pickle_large import collate_fn as collate_fn_val
 
-from model import make_model, subsequent_mask
+from model_large import make_model, subsequent_mask
 from loss import SimpleLossCompute, LabelSmoothing
 
 
