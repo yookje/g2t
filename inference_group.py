@@ -38,7 +38,8 @@ def rate(step, model_size, factor, warmup):
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 def end_discord(v_num,  node_size = None, G = None, G_hitratio = None, G_optgap = None,  elapsed_time2 = None):
-    url = "https://discord.com/api/webhooks/1271091864472129536/3zhVhquWprpVXd3KcJ09sSko4azfnkqf8OuVZgZHXJy9I4pQNXRXZakcpoaT3vqTcw5_"
+    
+    url = "https://discord.com/api/webhooks/1271091923695964242/QTJfLsteoSHdXIN2XjtfqI93bIrzVITVb65n8ZyMw4VIB1k0dCbEmdSvC3p1NBHT7y-T"
     webhook = DiscordWebhook(url=url)
 
     embed = DiscordEmbed(title="Inference End", description=f"version_{v_num}", color="03b2f8")
